@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <head>
+            <meta charset="UTF-8">
+            <title>{% block title %}MVC Kurs{% endblock %}</title>
+            <link rel="stylesheet" href="{{ asset("css/style.css") }}"/>
+        </head>
+            <div>
+                {% block navbar %}
+                        <a href="{{ url("home") }}">Hem</a> |
+                        <a href="{{ path("card") }}">Card</a> |
+                        <a href="{{ path("about") }}">Om</a> |
+                        <a href="{{ path("report") }}">Rapport</a>
+                {% endblock %}
+            </div>
+

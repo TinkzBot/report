@@ -1,0 +1,13 @@
+
+{% include 'main.html.twig' %}
+
+<body>
+    <div class="container">
+        <pre></pre>
+        {% for i in hand %}
+            <img class="cards" src="{{ asset(i) }}" alt="Empty Picture">
+        {% endfor %}
+    </div>
+</body>
+
+{% include 'footer.html.twig' %}
